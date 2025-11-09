@@ -1,6 +1,6 @@
 # Starter Kit API Node.js + Express + TypeScript
 
-Starter kit pour créer une API REST avec Node.js, Express et TypeScript, SOLID.
+Starter kit API REST - Node.js, Express, TypeScript.
 
 ## 🏗️ Architecture
 
@@ -28,7 +28,7 @@ Starter kit pour créer une API REST avec Node.js, Express et TypeScript, SOLID.
 ```
 starter-kit-nodejs-express-ts/
 ├── src/
-│   ├── controllers/      # Contrôleurs (couche présentation)
+│   ├── controllers/      # Contrôleurs
 │   ├── services/         # Services (logique métier)
 │   ├── repositories/     # Répositories (accès aux données)
 │   ├── models/           # Modèles de domaine
@@ -68,23 +68,6 @@ NODE_ENV=development
 - `npm run lint:fix` : Corriger automatiquement les erreurs ESLint
 - `npm run format` : Formater le code avec Prettier
 
-## 🧪 Tests
-
-Les tests unitaires sont écrits avec Jest et couvrent :
-- Les repositories
-- Les services
-- Les contrôleurs
-- Les modèles
-
-Pour exécuter les tests :
-```bash
-npm test
-```
-
-Pour voir la couverture de code :
-```bash
-npm run test:coverage
-```
 
 ## 📡 API Endpoints
 
@@ -108,48 +91,5 @@ curl -X POST http://localhost:3000/api/users \
     "email": "john@example.com"
   }'
 ```
-
-## 🔧 Technologies utilisées
-
-- **Node.js** : Runtime JavaScript
-- **Express** : Framework web
-- **TypeScript** : Langage de programmation typé
-- **Jest** : Framework de tests
-- **ESLint** : Linter pour le code
-- **Prettier** : Formateur de code
-- **Helmet** : Sécurité HTTP
-- **CORS** : Gestion des CORS
-
-## 📚 Principes SOLID appliqués
-
-### Single Responsibility Principle
-Chaque classe a une responsabilité unique et bien définie.
-
-### Open/Closed Principle
-Le code est ouvert à l'extension (via les interfaces) mais fermé à la modification.
-
-### Liskov Substitution Principle
-Les implémentations peuvent être substituées sans casser le code client.
-
-### Interface Segregation Principle
-Les interfaces sont spécifiques et ne forcent pas les classes à implémenter des méthodes inutiles.
-
-### Dependency Inversion Principle
-Les dépendances sont injectées via les constructeurs, permettant une meilleure testabilité et flexibilité.
-
-## 🎯 Prochaines étapes
-
-Pour étendre ce starter kit, vous pouvez :
-- Ajouter une base de données (PostgreSQL, MongoDB, etc.)
-- Implémenter l'authentification JWT
-- Ajouter la validation des données avec Zod ou class-validator
-- Ajouter la documentation API avec Swagger
-- Implémenter la pagination
-- Ajouter des tests d'intégration
-- Configurer CI/CD
-
-## 📄 Licence
-
-MIT
 
 
